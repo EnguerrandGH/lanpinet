@@ -1,0 +1,12 @@
+{
+  "homepage": "https://enguerrandgh.github.io/lanpinet",
+  "dependencies": {
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.1",
+    "express-zip": "^3.0.0",
+    "mustache-express": "^1.3.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

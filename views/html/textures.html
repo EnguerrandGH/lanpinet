@@ -1,0 +1,23 @@
+{{>header}}
+
+    <link rel = "stylesheet" href = "../css/textures.css">
+
+    <div id = "contains">
+        
+        {{#list}}
+
+        <div id = "{{.}}">
+
+            <a href = "texture_details/{{.}}">                      
+
+                <img src = "../img/textures/previews/{{.}}.png" alt ="{{.}}" >
+
+            </a>
+
+        </div>
+
+        {{/list}}
+        
+    </div>
+
+{{>footer}}

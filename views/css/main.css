@@ -1,0 +1,78 @@
+
+#main {
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+}
+
+#presentation {
+  background-image : url(../img/home/fond.png);
+  background-position: center;
+  background-position-y: 20%;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+}
+#content {
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+
+#previews {
+  background-color: rgb(11, 11, 11);
+  display: flex;
+  height: 799px;
+  width: 100%;
+}
+
+#previews p{
+  margin: auto;
+  font: 18px ;
+  letter-spacing: 1px;
+  max-width: 40%;
+}
+
+#left, #right {
+  padding: 50px;
+  width: 50%;
+}
+
+#models, #textures {
+  height: 100%;
+}
+
+.below:hover {
+  background-color: rgb(28, 28, 28);
+}
+
+.above, .below {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+
+.above {
+  height: 15%;
+  background-color:#151515;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.below {
+  height: 85%;
+  background-color: rgb(23, 23, 23);
+  border-radius: 0px 0px 20px 20px;
+}
+
+#presentation-bar {
+  background-color: rgb(219, 117, 0);
+  box-shadow: 0px 10px 140px rgba(255, 166, 0, 0.174);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: orange solid 1px; 
+}

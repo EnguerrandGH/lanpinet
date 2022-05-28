@@ -1,0 +1,52 @@
+{{>header}}
+
+    <script defer src = "../js/details.js"></script>
+
+    <!-- <link rel="stylesheet" href="../css/texture_details.css"> -->
+    <link rel="stylesheet" href="../css/model_details.css">
+
+    <div id = "content">
+
+        <div id = "images">
+
+            <div id = "above">
+
+                {{#list}}
+                
+                <div id = "above{{.}}">
+                    <img src="../img/textures/content/{{texture}}/{{.}}" alt = "{{texture}}">
+                </div>
+
+                {{/list}} 
+
+            </div>
+
+            <div id = "below">
+                {{#list}}
+                <img src="../img/textures/content/{{texture}}/{{.}}" alt = "{{texture}}" id = "{{.}}">
+                {{/list}} 
+            </div>
+
+        </div>
+
+        <div id = "download">
+
+            <div>
+                <br>
+                <br>
+                <br>
+                <form action = "/download_texture/{{texture}}" method = "post">
+                    <input type="submit" value = "download">
+                </form> 
+
+            </div>
+
+        </div>
+
+        <div id = "informations">
+
+        </div>
+
+    </div>
+
+{{>footer}}

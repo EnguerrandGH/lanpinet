@@ -1,0 +1,23 @@
+{{>header}}
+
+    <link rel = "stylesheet" href = "../css/models.css">
+
+    <div id = "contains">
+        
+        {{#list}}
+
+        <div id = "{{.}}">
+
+            <a href = "model_details/{{.}}">                      
+
+                <img src = "../img/models/previews/{{.}}.png" alt ="{{.}}" >
+
+            </a>
+
+        </div>
+
+        {{/list}}
+        
+    </div>
+
+{{>footer}}
