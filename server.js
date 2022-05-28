@@ -21,7 +21,7 @@ app.set('view engine', 'html');
 app.set('views', './views/html');
 
 const PORT = 3000;
-
+const HOSTNAME = '0.0.0.0';
 
 // ----------------------> GET <---------------------- //
 
@@ -109,4 +109,4 @@ app.post('/download_texture/:name', (req, res) => {
 });
 
 app.use(express.static( __dirname + '/views'));
-app.listen(PORT, () => { console.log(`Serveur a démarré avec le port ${PORT}`) } );
+app.listen(PORT, HOSTNAME, () => { console.log(`Serveur a démarré avec le port ${PORT}`) } );
